@@ -131,6 +131,7 @@ p {
   box-shadow: 0px 0px 20px -7px rgba(0, 0, 0, 0.56);
   box-sizing: border-box;
   position: relative;
+  background-color: #ffffff;
 }
 
 @media screen and (min-width: 1001px) {
@@ -146,6 +147,11 @@ p {
   box-shadow: 0px 0px 20px -7px rgba(0, 0, 0, 0.56);
   box-sizing: border-box;
   position: relative;
+}
+
+.footer-contents{
+  padding: 16px;
+  font-size: 0.875rem;
 }
 
 /* ===== App Bar BEGIN ===== */
@@ -243,6 +249,11 @@ p {
 .card-subtitle {
   font-size: 0.7rem;
   line-height: 2em;
+}
+
+.card-title-line{
+  background-color: rgba(0,0,0,0.1);
+  height: 4px;
 }
 
 .tile-grid-cover {

@@ -1,1 +1,91 @@
-hello
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Emura's Portfolio</title>
+    <link rel="stylesheet" href="./assets/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+  </head>
+  <body>
+    <img src="./assets/decorations/lt.svg" alt="背景デザイン画像1" class="page-bg-icon page-bg-icon-lt" />
+    <img src="./assets/decorations/rb.svg" alt="背景デザイン2" class="page-bg-icon page-bg-icon-rb" />
+    
+    <div class="page-cover bg-3 text-dark">
+      <h1 class="page-title text-1">Portfolio</h1>
+
+      <div class="card-cover bg-white">
+        <h2 class="card-title-cover bg-2 text-light">
+          <div class="card-title">English Title</div>
+          <div class="card-subtitle">日本語タイトル</div>
+          <div class="card-title-line"></div>
+        </h2>
+        <div class="card-contents">内容</div>
+      </div>
+
+      <div style="height: 20px;"></div>
+
+      <div class="card-cover bg-white">
+        <h2 class="card-title-cover bg-2 title-light">
+          <div class="card-title">Self-Introduction</div>
+          <div class="card-subtitle">自己紹介</div>
+          <div class="card-title-line"></div>
+        </h2>
+        <div class="card-contents">
+          <div class="card-basic-info-layout">
+            <div style="flex-grow: 1">
+              <div style="display: flex; gap: 1em; align-items:flex-end">
+                <h3 style="margin: 0; font-size: 2rem;">江村 泰輔</h3>
+                <span style="padding-bottom: 4px">えむら たいすけ</span>
+              </div>
+              <div>
+                <div class="bg-2" style="height: 2px;"></div>
+                <div class="text-2" style="font-size: 0.95rem;">Emura Taisuke</div>
+
+                <div class="text-1" style="display: flex; gap: 0.5em; align-items: center;">
+                  <img src="./assets/icons/email.svg" alt="Emailのアイコン">
+                  <span>emura0210@gmail.com</span>
+                </div>
+                <div>甲南大学 法学部 法学科 3年生</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-contents">
+            <span class="card-basic-info-label bg-1 text-light">自己紹介</span>
+            <p>
+              はじめまして、江村泰輔と言います。このサイトは、私の趣味やスキルなどを紹介するポートフォリオです。
+              このポートフォリオが、Webの初めての制作物です。どうぞご覧ください。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div style="height : 40px"></div>
+
+      <footer class="footer-cover bg-2 text-light">
+        <div style="height: 4px; background-color: rgba(0,0,0,0.1)"></div>
+        <div class="footer-contents">&copy;Emura's web page.</div>
+      </footer>
+    </div>
+    
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper",{
+        direction : "vertical",
+        loop : true,
+        pagination : {
+          el : "swiper-pagination",
+        },
+        navigation : {
+          nextE1 : ".swiper-button-next",
+          prevE1 : ".swiper-button-prev",
+        },
+        scrollbar : {
+          el : ".swiper-scrollbar",
+        },
+      });
+    </script>
+  </body>
+</html>
