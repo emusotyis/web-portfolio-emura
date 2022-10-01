@@ -64,28 +64,67 @@
 
       <div style="height : 40px"></div>
 
+      <div class="card-cover bg-white">
+        <h2 class="card-title-cover bg-2 text-light">
+          <div class="card-title">Hobby</div>
+          <div class="card-subtitle">趣味</div>
+          <div class="card-title-line"></div>
+        </h2>
+        <div class="card-contents">
+          私はゲームをすることが趣味です。今やっているゲームである、「原神」と「ファイナルファンタジー14」のスクリーンショットです。<br>とても楽しくゲームをさせてもらっています。
+        </div>
+        <div class="swiper-area" style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff;">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-title">原神 璃月キャラ 鍾離</div>
+              <img src="./assets/photos/鍾離.jpg" alt="原神 璃月キャラ 鍾離" style="width: auto">
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-title">原神 璃月キャラ 夜蘭</div>
+              <img src="./assets/photos/夜蘭.jpg" alt="原神 璃月キャラ 夜蘭" style="width: auto">
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-title">原神 稲妻キャラ 八重神子</div>
+              <img src="./assets/photos/八重神子.jpg" alt="原神 璃月キャラ 八重神子" style="width: auto">
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-title">FF14 筋斗雲</div>
+              <img src="./assets/photos/筋斗雲.jpg" alt="FF14 筋斗雲" style="width: auto">
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-title">FF14 決めポーズ</div>
+              <img src="./assets/photos/決めポーズ.jpg" alt="FF14 決めポーズ" style="width: auto">
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-title">FF14 お散歩</div>
+              <img src="./assets/photos/お散歩.jpg" alt="FF14 お散歩" style="width: auto">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
       <footer class="footer-cover bg-2 text-light">
         <div style="height: 4px; background-color: rgba(0,0,0,0.1)"></div>
         <div class="footer-contents">&copy;Emura's web page.</div>
       </footer>
     </div>
-    
+
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".swiper",{
-        direction : "vertical",
-        loop : true,
-        pagination : {
-          el : "swiper-pagination",
-        },
-        navigation : {
-          nextE1 : ".swiper-button-next",
-          prevE1 : ".swiper-button-prev",
-        },
-        scrollbar : {
-          el : ".swiper-scrollbar",
-        },
-      });
+      var swiper = new Swiper('.swiper-area',{
+        direction : 'horizontal',
+        spaceBetween :30,
+        autoplay : {delay:10 * 1000, disableOnInteraction : false},
+        loop: true,
+        pagination: {el: '.swiper-pagination'},
+        navigation: {
+          nextE1: 'swiper-button-next',
+          prevE1: 'swiper-button-prev',
+        }
+      })
     </script>
   </body>
 </html>
